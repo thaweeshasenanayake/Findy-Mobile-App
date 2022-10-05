@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Findzy</string>
+    <string name="app_copyright">© Thaweesha Senanayake</string>
+    <string name="get_started_button">Get Started</string>
+</resources>
