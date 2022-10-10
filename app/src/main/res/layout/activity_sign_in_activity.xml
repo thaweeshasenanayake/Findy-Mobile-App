@@ -9,7 +9,10 @@
     tools:context=".SignInActivity"
     tools:ignore="SpeakableTextPresentCheck"
     android:background="@color/white"
-    android:padding="20dp">
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="0dp">
 
     <LinearLayout
         android:id="@+id/header_bar"
@@ -20,18 +23,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/sign_in_back_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toTopOf="@+id/imageView2"
-                app:layout_constraintEnd_toStartOf="@+id/imageView2"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+<!--            <ImageView-->
+<!--                android:id="@+id/sign_in_back_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/imageView2"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/imageView2"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.0"-->
+<!--                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />-->
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -53,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/header_bar"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="40dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -122,13 +125,13 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/button_main"
-                android:clickable="true"
-                android:focusable="true"
                 android:fontFamily="@font/openregular"
                 android:text="Sign In"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:textSize="16dp" />
 
             <TextView
