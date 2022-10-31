@@ -20,7 +20,7 @@
         <item name="android:textSize">11sp</item>
     </style>
 
-    <style name="Theme.Findzy1" parent="Theme.MaterialComponents.Light" >
+    <style name="Theme.Findzy1" parent="Theme.MaterialComponents.Light.NoActionBar" >
         <!-- Primary brand color. -->
 
         <!-- Primary brand color. -->
@@ -35,7 +35,7 @@
 <!--    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
         <item name="android:statusBarColor">@color/white</item>
-
+        <item name="android:homeAsUpIndicator">@drawable/ic_baseline_arrow_back_24</item>
         <!-- Customize your theme here. -->
     </style>
     

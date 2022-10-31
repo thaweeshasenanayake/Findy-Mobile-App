@@ -1,9 +1,12 @@
 package com.example.findzy;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,32 +20,21 @@ public class SignInActivity extends AppCompatActivity {
     private TextView btnSignUpforAccount;
     private BottomNavigationView bottomNavigationView;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in_activity);
 
-        // action bar color change to white
-        androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setBackgroundDrawable(getResources().getDrawable(R.color.white));
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setElevation(0);
-
-        // add image to the action bar
-//        actionBar.setDisplayShowCustomEnabled(true);
-//        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//        View v= inflater.inflate(R.layout.custom_img, null);
-//        actionBar.setCustomView(v);
-
-
-
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(getResources().getDrawable(R.drawable.ic_baseline_arrow_back_24));
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         bottomNavigationView = findViewById(R.id.bottom_nav_view);
         btnSignUpforAccount = findViewById(R.id.btn_signup_for_account);
-
-
 
         btnSignUpforAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,13 +42,12 @@ public class SignInActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), SignUpActivity.class));
             }
         });
-
-
-
     }
 
     @Override
     public void onBackPressed() {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
+
+
 }
