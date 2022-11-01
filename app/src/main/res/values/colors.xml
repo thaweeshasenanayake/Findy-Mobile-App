@@ -11,4 +11,5 @@
     <color name="text_blue_one">#55A0DF</color>
     <color name="verify_text_green">#4BD37B</color>
     <color name="not_verify_red">#FF0D0D</color>
+    <color name="gray_text">#8F8F8F</color>
 </resources>
