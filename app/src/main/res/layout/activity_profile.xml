@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Profile">
+
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/toolbarlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="0dp"
+    android:gravity="center"
+    android:theme="@style/Theme.Findzy1"
+    app:elevation="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/white"
+      android:elevation="0dp"
+      app:elevation="0dp"
+      app:title=" ">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/opensemibold"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <RelativeLayout
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="20dp"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/toolbarlayout"
+    app:layout_constraintVertical_bias="0.0"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+      android:id="@+id/profile_image_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:paddingTop="10dp">
+
+      <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/sol08698_1"
+        app:shapeAppearanceOverlay="@style/circular_shape"
+        />
+      <Button
+        android:id="@+id/btn_change_profile_picture"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/openregular"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:text="Change Profile Picture"
+        android:textAllCaps="false"
+        android:textColor="@color/button_color"
+        android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/profile_content_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingBottom="10dp"
+      android:layout_below="@+id/profile_image_layout"
+      android:layout_above="@+id/btn_sign_out">
+
+      <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensemibold"
+            android:text="Profile Settings"
+            android:textColor="@color/gray_text_2"
+            android:textSize="16dp" />
+
+          <Button
+            android:id="@+id/btn_edit_profile"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:padding="0dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/group_24"
+            android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
+            android:focusable="true"
+            android:fontFamily="@font/openregular"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="Edit Profile"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+          <Button
+            android:id="@+id/btn_change_password"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:padding="0dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/group_25"
+            android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
+            android:focusable="true"
+            android:fontFamily="@font/openregular"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="Change Password"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensemibold"
+            android:text="Notifications"
+            android:textColor="@color/gray_text_2"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"/>
+
+          <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+          <Button
+            android:id="@+id/btn_notification_on_off"
+            style="?android:attr/borderlessButtonStyle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:padding="0dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/group_26"
+            android:focusable="true"
+            android:fontFamily="@font/openregular"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="Notifications"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/btn_notification_toggle"/>
+
+            <Switch
+              android:id="@+id/btn_notification_toggle"
+              android:layout_width="wrap_content"
+              android:layout_height="60dp"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              />
+
+          </RelativeLayout>
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensemibold"
+            android:text="Legal and Help"
+            android:textColor="@color/gray_text_2"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+      </ScrollView>
+    </LinearLayout>
+
+    <Button
+      android:id="@+id/btn_sign_out"
+      style="?android:attr/borderlessButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginTop="5dp"
+      android:background="@drawable/button_main"
+      android:clickable="true"
+      android:focusable="true"
+      android:fontFamily="@font/openregular"
+      android:foreground="?attr/selectableItemBackgroundBorderless"
+      android:text="Sign Out"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      android:textSize="16dp"
+      android:layout_alignParentBottom ="true"
+
+      />
+  </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

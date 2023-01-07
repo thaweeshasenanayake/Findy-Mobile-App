@@ -2,4 +2,141 @@
     <string name="app_name">Findzy</string>
     <string name="app_copyright">© Thaweesha Senanayake</string>
     <string name="get_started_button">Get Started</string>
+
+    <string-array name="array_provinces">
+      <item>Western</item>
+      <item>Central</item>
+      <item>Southern</item>
+      <item>North Western</item>
+      <item>Sabaragamuwa</item>
+      <item>Eastern</item>
+      <item>Uva</item>
+      <item>North Central</item>
+      <item>Northern</item>
+    </string-array>
+
+    <string-array name="array_western_province_districts">
+      <item>Colombo</item>
+      <item>Gampaha</item>
+      <item>Kalutara</item>
+    </string-array>
+
+    <string-array name="array_central_province_districts">
+      <item>Kandy</item>
+      <item>Nuwara Eliya</item>
+      <item>Matale</item>
+    </string-array>
+
+    <string-array name="array_southern_province_districts">
+      <item>Galle</item>
+      <item>Matara</item>
+      <item>Hambontota</item>
+    </string-array>
+
+    <string-array name="array_north_province_districts">
+      <item>Jaffna</item>
+      <item>Kilinochchi</item>
+      <item>Mannar</item>
+      <item>Mullaitivu</item>
+      <item>Vavuniya</item>
+    </string-array>
+
+  <string-array name="array_sabaragamu_province_districts">
+    <item>Rathnapura</item>
+    <item>Kegalle</item>
+  </string-array>
+
+  <string-array name="array_eastern_province_districts">
+    <item>Trincomalee</item>
+    <item>Ampara</item>
+    <item>Batticaloa</item>
+  </string-array>
+
+  <string-array name="array_uva_province_districts">
+    <item>Badulla</item>
+    <item>Monaragala</item>
+  </string-array>
+
+  <string-array name="array_northcentral_province_districts">
+    <item>Anuradhapura</item>
+    <item>Polonnaruwa</item>
+  </string-array>
+
+  <string-array name="array_northwestern_province_districts">
+    <item>Kurunegala</item>
+    <item>Puttalam</item>
+  </string-array>
+
+
+  <!--city-->
+
+  <string-array name="array_colombo_cities">
+    <item> Ambalangoda</item>
+    <item> Athurugiriya</item>
+    <item> Colombo 15</item>
+    <item> Avissawella</item>
+    <item> Akarawita</item>
+    <item> Batawala</item>
+    <item> Battaramulla</item>
+    <item> Biyagama</item>
+    <item> Bope</item>
+    <item> Boralesgamuwa</item>
+    <item> Colombo 8</item>
+    <item> Dedigamuwa</item>
+    <item> Dehiwala</item>
+    <item> Deltara</item>
+    <item> Habarakada</item>
+    <item> Hanwella</item>
+    <item> Hiripitya</item>
+    <item> Hokandara</item>
+    <item> Homagama</item>
+    <item> Horagala</item>
+    <item> Kaduwela</item>
+    <item> Kaluaggala</item>
+    <item> Kapugoda</item>
+    <item> Kehelwatta</item>
+    <item> Kiriwattuduwa	</item>
+
+  </string-array>
+
+  <string-array name="default_city">
+    <item> Akuressa</item>
+    <item> Alapaladeniya</item>
+    <item> Aparekka</item>
+    <item> Athuraliya</item>
+    <item> Bengamuwa</item>
+    <item> Bopagoda</item>
+    <item> Dampahala</item>
+    <item> Deegala Lenama</item>
+    <item> Deiyandara</item>
+    <item> Denagama</item>
+    <item> Denipitiya</item>
+    <item> Deniyaya</item>
+    <item> Derangala</item>
+    <item> Devinuwara (Dondra)</item>
+    <item> Dikwella</item>
+    <item> Diyagaha</item>
+    <item> Diyalape</item>
+    <item> Gandara</item>
+    <item> Godapitiya</item>
+    <item> Gomilamawarala</item>
+    <item> Hawpe</item>
+    <item> Horapawita</item>
+    <item> Kalubowitiyana</item>
+    <item> Kamburugamuwa</item>
+    <item> Kamburupitiya	</item>
+
+  </string-array>
+
+
 </resources>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostsActivity">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/toolbarlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="0dp"
+    android:gravity="center"
+    android:theme="@style/Theme.Findzy1"
+    app:elevation="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/white"
+      android:elevation="0dp"
+      app:elevation="0dp"
+      app:title=" ">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/opensemibold"
+        android:text="Posts"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <LinearLayout
+    android:id="@+id/posts_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:layout_marginBottom="90dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="5dp"
+    app:layout_constraintBottom_toTopOf="@+id/main_co"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <Button
+        android:id="@+id/btn_location_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Matara"
+        android:fontFamily="@font/openregular"
+        android:textAllCaps="false"
+        android:textColor="@color/text_blue_one"
+        android:textSize="16dp"
+        android:letterSpacing="0"
+        app:strokeColor = "@color/text_blue_one"
+        app:icon="@drawable/ic_outline_location_on_24"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
+
+      <Button
+        android:id="@+id/btn_category_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintStart_toEndOf="@id/btn_location_select"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_filter"
+        android:text="Home Maintenance"
+        android:fontFamily="@font/openregular"
+        android:textAllCaps="false"
+        android:textColor="@color/text_blue_one"
+        android:textSize="16dp"
+        android:letterSpacing="0"
+        app:strokeColor = "@color/text_blue_one"
+        app:icon="@drawable/ic_outline_label_24"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
+
+      <Button
+        android:id="@+id/btn_filter"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:icon="@drawable/filter_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/text_blue_one"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="70 Results"
+      android:textColor="@color/text_blue_one"
+      android:fontFamily="@font/openmedium"
+      />
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingVertical="10dp">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/posts_recyclerview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+        </androidx.recyclerview.widget.RecyclerView>
+
+      </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+  </LinearLayout>
+
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/main_co"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+      android:id="@+id/bottom_nav_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:backgroundTint="#F2F8FF"
+      app:fabAlignmentMode="center"
+      app:fabCradleMargin="6dp"
+      app:fabCradleRoundedCornerRadius="10dp"
+      app:fabCradleVerticalOffset="0dp"
+
+      >
+
+      <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"
+        android:animateLayoutChanges="false"
+        android:background="@android:color/transparent"
+
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="24dp"
+        app:itemIconTint="@drawable/bottom_nav_selector"
+        app:itemTextAppearanceActive="@style/Widget.BottomNavigationView"
+        app:itemTextAppearanceInactive="@style/Widget.BottomNavigationView"
+        app:itemTextColor="@drawable/bottom_nav_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu"
+
+        />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/add_new_post_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:backgroundTint="#62B1EB"
+      android:src="@drawable/plus_icon"
+      app:fabCustomSize="35dp"
+      app:layout_anchor="@id/bottom_nav_bar"
+      app:maxImageSize="15dp"
+      app:tint="@color/white"
+      tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

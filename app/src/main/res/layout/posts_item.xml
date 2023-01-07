@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="10dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardCornerRadius="10dp"
+    app:strokeColor = "@color/black"
+    app:strokeWidth = "1dp"
+    app:cardBackgroundColor="#6BB0E6FF"
+    android:layout_marginBottom="15dp"
+    app:cardElevation="0dp">
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+      android:id="@+id/service_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Electrician Home Wiring"
+      android:textSize="18dp"
+      android:textColor="@color/black"
+      android:fontFamily="@font/openbold"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location : "
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:fontFamily="@font/openregular"/>
+
+      <TextView
+        android:id="@+id/service_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matara"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:fontFamily="@font/opensemibold"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category : "
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:fontFamily="@font/openregular"/>
+
+      <TextView
+        android:id="@+id/service_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Maintenance"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:fontFamily="@font/opensemibold"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="0dp"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/service_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="start"
+        android:text="20 Comments"
+        android:textColor="@color/text_blue_one"
+        android:fontFamily="@font/openregular"
+        android:textSize="14dp"/>
+
+      <View android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+      <Button
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:id="@+id/btn_view_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0"
+        android:text="View Post"
+        android:textAllCaps="false"
+        android:textColor="@color/text_blue_one"
+        android:textSize="14dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
