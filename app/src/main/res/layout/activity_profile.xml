@@ -79,7 +79,6 @@
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/openregular"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
         android:text="Change Profile Picture"
         android:textAllCaps="false"
         android:textColor="@color/button_color"
@@ -125,7 +124,6 @@
             android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
             android:focusable="true"
             android:fontFamily="@font/openregular"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:text="Edit Profile"
             android:gravity="left|center_vertical"
             android:textAllCaps="false"
@@ -144,7 +142,6 @@
             android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
             android:focusable="true"
             android:fontFamily="@font/openregular"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:text="Change Password"
             android:gravity="left|center_vertical"
             android:textAllCaps="false"
@@ -164,28 +161,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
-
-
-          <Button
-            android:id="@+id/btn_notification_on_off"
-            style="?android:attr/borderlessButtonStyle"
-
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_marginTop="5dp"
-            android:padding="0dp"
-            android:clickable="true"
-            android:drawableLeft="@drawable/group_26"
-            android:focusable="true"
-            android:fontFamily="@font/openregular"
-            android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:text="Notifications"
-            android:gravity="left|center_vertical"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            android:layout_alignParentStart="true"
-            android:layout_toLeftOf="@+id/btn_notification_toggle"/>
+            <Button
+              android:id="@+id/btn_notification_on_off"
+              style="?android:attr/borderlessButtonStyle"
+              android:layout_width="wrap_content"
+              android:layout_height="60dp"
+              android:layout_alignParentStart="true"
+              android:layout_marginTop="5dp"
+              android:layout_toLeftOf="@+id/btn_notification_toggle"
+              android:clickable="true"
+              android:drawableLeft="@drawable/group_26"
+              android:focusable="true"
+              android:fontFamily="@font/openregular"
+              android:gravity="left|center_vertical"
+              android:padding="0dp"
+              android:text="Notifications"
+              android:textAllCaps="false"
+              android:textColor="@color/black"
+              android:textSize="16dp" />
 
             <Switch
               android:id="@+id/btn_notification_toggle"
@@ -193,7 +186,10 @@
               android:layout_height="60dp"
               android:layout_alignParentEnd="true"
               android:layout_centerVertical="true"
-              />
+              android:checked="true"
+              android:padding="10dp"
+              android:thumb="@drawable/ic_baseline_brightness_1_24"
+              android:track="@drawable/bg_track_switch" />
 
           </RelativeLayout>
           <TextView
@@ -204,6 +200,86 @@
             android:textColor="@color/gray_text_2"
             android:textSize="16dp"
             android:layout_marginTop="10dp"/>
+
+          <Button
+            android:id="@+id/btn_terms"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/btn_notification_toggle"
+            android:clickable="true"
+            android:drawableLeft="@drawable/group_27"
+            android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
+            android:focusable="true"
+            android:fontFamily="@font/openregular"
+            android:gravity="left|center_vertical"
+            android:padding="0dp"
+            android:text="Terms and Conditions"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+          <Button
+            android:id="@+id/btn_privacy"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/btn_notification_toggle"
+            android:clickable="true"
+            android:drawableLeft="@drawable/group_28"
+            android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
+            android:focusable="true"
+            android:fontFamily="@font/openregular"
+            android:gravity="left|center_vertical"
+            android:padding="0dp"
+            android:text="Privacy Policy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+          <Button
+            android:id="@+id/btn_help_contact"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/btn_notification_toggle"
+            android:clickable="true"
+            android:drawableLeft="@drawable/group_29"
+            android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
+            android:focusable="true"
+            android:fontFamily="@font/openregular"
+            android:gravity="left|center_vertical"
+            android:padding="0dp"
+            android:text="Help and Contact"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+          <Button
+            android:id="@+id/btn_report_bug"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/btn_notification_toggle"
+            android:clickable="true"
+            android:drawableLeft="@drawable/group_30"
+            android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
+            android:focusable="true"
+            android:fontFamily="@font/openregular"
+            android:gravity="left|center_vertical"
+            android:padding="0dp"
+            android:text="Report a Bug"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
 
 
         </LinearLayout>
