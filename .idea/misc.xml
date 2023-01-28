@@ -27,6 +27,7 @@
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/drawable/circle_shape.xml" value="0.191" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/drawable/custom_switch.xml" value="0.191" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/drawable/custom_switch_off.xml" value="0.191" />
+        <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/drawable/custom_switch_on.xml" value="0.191" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/drawable/drop_down_background.xml" value="0.208" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/drawable/ic_banner_ad.xml" value="0.191" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/drawable/ic_bannerad.xml" value="0.191" />
@@ -42,7 +43,7 @@
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/layout/activity_my_posts.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/layout/activity_posts.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/layout/activity_posts_activtity.xml" value="0.20863616930312098" />
-        <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/layout/activity_profile.xml" value="0.176" />
+        <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/layout/activity_profile.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/layout/activity_sign_in_activity.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/layout/activity_sign_up_activity.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/thawe/Desktop/Projects/Android Projects/Findzy/app/src/main/res/layout/posts_item.xml" value="0.264" />

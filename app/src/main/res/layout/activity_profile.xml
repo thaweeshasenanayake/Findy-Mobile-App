@@ -65,9 +65,10 @@
       android:paddingTop="10dp">
 
       <com.google.android.material.imageview.ShapeableImageView
+        android:id ="@+id/profile_picture"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:src="@drawable/sol08698_1"
+        android:src="@drawable/ic_baseline_person_24"
         app:shapeAppearanceOverlay="@style/circular_shape"
         />
       <Button

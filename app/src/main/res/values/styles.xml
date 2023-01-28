@@ -2,6 +2,7 @@
 <resources>
     <style name="circular_shape">
       <item name="cornerSize">50%</item>
+      <item name="backgroundTint">#9A9A9A</item>
     </style>
     
 </resources>
