@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "537853394122",
+    "firebase_url": "https://findzymobileapp-default-rtdb.firebaseio.com",
+    "project_id": "findzymobileapp",
+    "storage_bucket": "findzymobileapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537853394122:android:10a7d124bf0a380f454833",
+        "android_client_info": {
+          "package_name": "com.example.findzy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537853394122-c4i03j9m7879hmjs5oqqu0m99b1fdh74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr--FgmxrBrkiCTIP1ZL0Pt3ON6zvVtuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537853394122-c4i03j9m7879hmjs5oqqu0m99b1fdh74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
